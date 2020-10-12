@@ -14,8 +14,8 @@ public class SecondEndToEndTestCase {
     driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
     driver.get("http://twitter.com");
     //driver.findElement(By.cssSelector("a[data-testid='loginButton']")).click();
-    driver.findElement(By.name("session[username_or_email]")).sendKeys("letstweet_a");
-    driver.findElement(By.name("session[password]")).sendKeys("donttellk3bever");
+    driver.findElement(By.name("session[username_or_email]")).sendKeys("********");
+    driver.findElement(By.name("session[password]")).sendKeys("********");
     driver.findElement(By.cssSelector("div[data-testid='LoginForm_Login_Button']")).click();
     driver.findElement(By.cssSelector("a[aria-label='Profile']")).click();
     driver.findElement(By.cssSelector("a[href='/settings/profile']")).click();
