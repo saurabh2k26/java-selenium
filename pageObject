@@ -21,4 +21,10 @@ public class IndexPage {
     driver.findElement(password).sendKeys(passwd);
     driver.findElement(LogInButton).click();
   }
+  
+  // use type as WebElement when return something
+  public WebElement getUserName() {
+    return driver.findElement(username);
+  }
+  
 }
